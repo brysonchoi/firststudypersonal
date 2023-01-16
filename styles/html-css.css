@@ -1,0 +1,68 @@
+.html-css {
+  margin: 56px 0;
+  display: inline-flex;
+  gap: 56px;
+}
+.html-css__desc {
+  margin-top: 1.6em;
+  font-size: 18px;
+  color: #281812;
+}
+.html-css__desc strong {
+  font-weight: bold;
+}
+.html-css__title {
+  font-size: 32px;
+  font-weight: bold;
+  font-weight: 100;
+}
+._html .html-css__title em {
+  color: #f16528;
+}
+._css .html-css__title em {
+  color: #2965f1;
+}
+.html-css__spec {
+  margin-top: 1.6em;
+}
+.html-css__spec dd {
+  margin-right: 1.2em;
+  font-size: 20px;
+  color: #dc9c86;
+}
+.html-css__thumb {
+  position: relative;
+}
+
+/* 둥둥 */
+@keyframes logo-hover {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.html-css__logo {
+  animation-name: logo-hover;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#html {
+  border-right: 8px solid #fff5ed;
+}
+.html-css__logo {
+  width: 144px;
+}
+.html-css__content {
+  text-align: left;
+}
+.html-css__thumb::after {
+  left: calc(50% - 72px);
+  bottom: -24px;
+  width: 144px;
+}

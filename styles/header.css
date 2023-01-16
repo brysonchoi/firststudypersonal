@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  position: sticky;
+  /* 스크롤업되는 컨텐츠 위로 올라오도록 */
+  z-index: 2;
+  top: 0;
+  height: 72px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.headerHome {
+  display: inline-block;
+  padding: 0 24px;
+  height: 72px;
+  line-height: 72px;
+  cursor: pointer;
+}
+.headerLogo {
+  height: 48px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+
+.headerNavItem {
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.headerNavItem a {
+  /* 클릭 영역 확대 */
+  padding: 0 0.8em;
+  display: inline-block;
+  height: 72px;
+  line-height: 72px;
+}
+.headerNavItem::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: blue;
+  transition: all 350ms;
+}
+.headerNavItem:hover::after {
+  left: 0;
+  width: 100%;
+  height: 8px;
+}

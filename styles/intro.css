@@ -1,0 +1,44 @@
+.intro {
+  height: 500px;
+  position: relative;
+  background-image: url("../images/introTop.jpg");
+  background-size: cover; /* 이미지를 꽉 채우는 속성 */
+  background-position: center; /* 이미지를 중앙에 위치시키는 속성 */
+}
+
+/* 배경 이미지를 반투명 검정으로 가리기 */
+.introTop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.introText {
+  display: inline-flex;
+  /* inline-flex: inline요소처럼 사용하면서 flex의 속성을 사용할 수 있다. */
+  gap: 0.32em;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: white;
+  margin-top: 170px;
+  align-items: center;
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.introText .star {
+  animation-name: blink;
+  animation-duration: 350ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

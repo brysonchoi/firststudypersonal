@@ -1,0 +1,73 @@
+/* 리셋 css : 우리가 코드로 작성하고 브라우저로 실행을 해보면 내가 적용을 하지 않았는데도 자동으로 margin이 들어간 경우 -> 웹 브라우저마다 default값이 적용
+동일한 css를 보여주기 위해 default값을 초기화해주어야한다.
+그럴때 reset.css을 사용해도 되고 밑에와 같이 직접 지정 */
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+strong,
+em {
+  font-weight: inherit;
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+dl {
+  margin: 0;
+}
+dd {
+  margin: 0;
+  display: inline;
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+th {
+  font-weight: normal;
+}
+
+address {
+  font-style: inherit;
+}
+
+/* 스크린리더용 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

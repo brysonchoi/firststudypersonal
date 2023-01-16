@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>junghyun</title>
+    <link rel="shortcut icon" href="./images/webicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="intro">
+      <div class="introTop">
+        <div class="introText">
+          <div><span class="star">⭐️</span>최중현</div>
+          <div>HTML&CSS연습하기<span class="star">⭐️</span></div>
+        </div>
+      </div>
+    </section>
+
+    <header class="header">
+      <h1>
+        <a class="headerHome" href="#">
+          <img class="headerLogo" src="./images/logo.svg" alt="최상단으로" />
+        </a>
+      </h1>
+      <nav class="headerNav">
+        <ul>
+          <li class="headerNavItem">
+            <a href="#about">페이지 소개</a>
+          </li>
+          <li class="headerNavItem">
+            <a href="#html">HTML</a>
+          </li>
+          <li class="headerNavItem">
+            <a href="#css">CSS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <header class="section__header">
+          <strong class="section__tag"> about </strong>
+          <h1 class="section__title">내가 만든 페이지</h1>
+        </header>
+
+        <div class="about">
+          <div class="about__card">
+            <img class="about__icon" src="./images/html.svg" />
+            <h2 class="about__title _1">HTML</h2>
+            <p class="about__text">
+              HTML로 <br />
+              페이지를 구성하기
+            </p>
+          </div>
+          <div class="about__card">
+            <img class="about__icon" src="./images/css.svg" alt="" />
+            <h2 class="about__title _2">CSS</h2>
+            <p class="about__text">
+              CSS로<br />
+              만든 페이지를 꾸며보기
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="html" class="section">
+      <header class="section__header">
+        <strong class="section__tag"> html </strong>
+        <h1 class="section__title">웹 개발의 시작</h1>
+      </header>
+      <article class="html-css _html">
+        <figure class="html-css__thumb">
+          <img class="html-css__logo" src="./images/html.svg" alt="HTML 로고" />
+        </figure>
+        <div class="html-css__content">
+          <h2 class="html-css__title">
+            <div>
+              <em>H</em>yper<em>T</em>ext <br />
+              <em>M</em>arkup <em>L</em>anguage
+            </div>
+          </h2>
+          <p class="html-css__desc">
+            <strong>태그</strong>를 사용하여 웹페이지 안의 요소들과 그 구조를
+            표현할 수 있는 언어
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="css" class="section">
+      <header class="section__header">
+        <strong class="section__tag"> css </strong>
+        <h1 class="section__title">디자인을 위한 CSS</h1>
+      </header>
+      <article class="html-css _css">
+        <figure class="html-css__thumb">
+          <img class="html-css__logo" src="./images/css.svg" alt="CSS 로고" />
+        </figure>
+        <div class="html-css__content">
+          <h2 class="html-css__title">
+            <div>
+              <em>C</em>ascade <br />
+              <em>S</em>type <em>S</em>heet
+            </div>
+          </h2>
+          <p class="html-css__desc">
+            웹페이지 요소에 각종 속성을 부여하여 다양하게
+            <strong>스타일링</strong>할 수 있는 언어
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <h1 class="sr-only">Copyright</h1>
+      <p>2023.01.17 완성</p>
+    </footer>
+  </body>
+</html>
