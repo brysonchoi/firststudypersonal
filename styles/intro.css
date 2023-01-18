@@ -18,8 +18,7 @@
 }
 
 .introText {
-  display: inline-flex;
-  /* inline-flex: inline요소처럼 사용하면서 flex의 속성을 사용할 수 있다. */
+  display: flex;
   gap: 0.32em;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 2.8em;
@@ -27,6 +26,7 @@
   color: white;
   margin-top: 170px;
   align-items: center;
+  justify-content: center;
 }
 @keyframes blink {
   from {
